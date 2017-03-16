@@ -1,0 +1,181 @@
+<skeleton>
+    <bones>
+        <bone id="0" name="Hips">
+            <position x="0" y="103.133" z="0" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="1" name="LeftUpLeg">
+            <position x="8.9458" y="-8.66707" z="0.101652" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="2" name="LeftLeg">
+            <position x="0" y="-44.4227" z="1.3727" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="3" name="LeftFoot">
+            <position x="-0.253549" y="-42.0924" z="-1.46059" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="4" name="LeftToes">
+            <position x="-0.04" y="-4.41509" z="8.4991" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="5" name="LeftToes_Effector">
+            <position x="0.08" y="-0.047448" z="9.77979" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="6" name="Spine">
+            <position x="0" y="11.8905" z="0" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="7" name="Spine1">
+            <position x="0" y="25.6574" z="0.127663" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="8" name="RightShoulder">
+            <position x="-8.99" y="-0.362252" z="-0.22" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="9" name="RightArm">
+            <position x="-10.2827" y="-0.00338" z="0.322123" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="10" name="RightForeArm">
+            <position x="-26.364" y="0.099144" z="-1.42434" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="11" name="RightHand">
+            <position x="-22.0324" y="0.085362" z="1.02216" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="12" name="RightHand_Effector">
+            <position x="-13.3284" y="-0.6" z="1.50291" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="13" name="LeftShoulder1">
+            <position x="8.99" y="-0.362252" z="-0.22" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="14" name="LeftArm">
+            <position x="10.2827" y="-0.00337999" z="0.322123" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="15" name="LeftForeArm">
+            <position x="26.2597" y="0.099144" z="-1.42434" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="16" name="LeftHand">
+            <position x="22.0902" y="0.085362" z="1.02216" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="17" name="LeftHand_Effector">
+            <position x="13.419" y="-0.6" z="1.50291" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="18" name="Head">
+            <position x="0" y="8.73416" z="0.011341" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="19" name="Head_Effector">
+            <position x="-0.29" y="12.7742" z="2.51395" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="20" name="RightUpLeg">
+            <position x="-8.9458" y="-8.66707" z="0.101652" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="21" name="RightLeg">
+            <position x="0" y="-44.4227" z="1.3727" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="22" name="RightFoot">
+            <position x="0.253549" y="-42.0924" z="-1.46059" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="23" name="RightToes">
+            <position x="0.04" y="-4.41509" z="8.4991" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+        <bone id="24" name="RightToes_Effector">
+            <position x="-0.08" y="-0.137448" z="9.77979" />
+            <rotation angle="0">
+                <axis x="1" y="0" z="0" />
+            </rotation>
+        </bone>
+    </bones>
+    <bonehierarchy>
+        <boneparent bone="LeftUpLeg" parent="Hips" />
+        <boneparent bone="LeftLeg" parent="LeftUpLeg" />
+        <boneparent bone="LeftFoot" parent="LeftLeg" />
+        <boneparent bone="LeftToes" parent="LeftFoot" />
+        <boneparent bone="LeftToes_Effector" parent="LeftToes" />
+        <boneparent bone="Spine" parent="Hips" />
+        <boneparent bone="Spine1" parent="Spine" />
+        <boneparent bone="RightShoulder" parent="Spine1" />
+        <boneparent bone="RightArm" parent="RightShoulder" />
+        <boneparent bone="RightForeArm" parent="RightArm" />
+        <boneparent bone="RightHand" parent="RightForeArm" />
+        <boneparent bone="RightHand_Effector" parent="RightHand" />
+        <boneparent bone="LeftShoulder1" parent="Spine1" />
+        <boneparent bone="LeftArm" parent="LeftShoulder1" />
+        <boneparent bone="LeftForeArm" parent="LeftArm" />
+        <boneparent bone="LeftHand" parent="LeftForeArm" />
+        <boneparent bone="LeftHand_Effector" parent="LeftHand" />
+        <boneparent bone="Head" parent="Spine1" />
+        <boneparent bone="Head_Effector" parent="Head" />
+        <boneparent bone="RightUpLeg" parent="Hips" />
+        <boneparent bone="RightLeg" parent="RightUpLeg" />
+        <boneparent bone="RightFoot" parent="RightLeg" />
+        <boneparent bone="RightToes" parent="RightFoot" />
+        <boneparent bone="RightToes_Effector" parent="RightToes" />
+    </bonehierarchy>
+    <animations />
+</skeleton>

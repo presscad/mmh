@@ -1,0 +1,121 @@
+root_height	0
+ankle_height	-19.4137
+pelvis
+begin
+	coordinate	( 0 , 0 , 0 ) ( 1 , 0 , 0 , 0 )
+end
+
+upper_right_leg
+begin
+	parent	pelvis
+	coordinate	( -3.52197 , -3.41223 , 0.0400205 ) ( 0.999455 , -0.01991 , -0.0199511 , -0.0171688 )
+end
+
+lower_right_leg
+begin
+	parent	upper_right_leg
+	coordinate	( -4.15726 , -20.8554 , 1.26366 ) ( 0.991955 , 0.0488348 , -0.113108 , -0.0291186 )
+end
+
+right_foot
+begin
+	parent	lower_right_leg
+	coordinate	( -4.70374 , -37.2751 , -0.986519 ) ( 0.993112 , 0.00100981 , -0.113672 , -0.0284078 )
+end
+
+right_toe
+begin
+	parent	right_foot
+	coordinate	( -5.54178 , -38.9965 , 2.26195 ) ( 0.993764 , 0.00113053 , -0.107927 , -0.0280008 )
+end
+
+spine_2
+begin
+	parent	pelvis
+	coordinate	( 3.8873e-014 , 4.6813 , 2.14723e-015 ) ( 0.999992 , -0.00337358 , -0.000220982 , -0.00197198 )
+end
+
+chest
+begin
+	parent	spine_2
+	coordinate	( 0.0398326 , 14.7827 , -0.0178863 ) ( 0.999986 , 0.00517499 , -0.00102764 , 0.00106971 )
+end
+
+neck
+begin
+	parent	chest
+	coordinate	( 0.0324303 , 18.2211 , 0.0221602 ) ( 0.999933 , 0.00723727 , -0.00791735 , 0.00446074 )
+end
+
+left_shoulder
+begin
+	parent	chest
+	coordinate	( 3.57967 , 14.6485 , -0.098658 ) ( 0.999986 , 0.00517499 , -0.00102764 , 0.00106971 )
+end
+
+upper_left_arm
+begin
+	parent	left_shoulder
+	coordinate	( 7.62772 , 14.6545 , 0.0365065 ) ( 0.895767 , -0.441696 , -0.00744143 , 0.0495109 )
+end
+
+lower_left_arm
+begin
+	parent	upper_left_arm
+	coordinate	( 17.9431 , 15.2198 , -0.650655 ) ( 0.992464 , -0.107436 , 0.0171498 , -0.0563814 )
+end
+
+left_palm
+begin
+	parent	lower_left_arm
+	coordinate	( 26.6019 , 14.3321 , -0.455679 ) ( 0.995161 , -0.024923 , 0.0333826 , 0.0889859 )
+end
+
+right_shoulder
+begin
+	parent	chest
+	coordinate	( -3.49904 , 14.6335 , -0.113285 ) ( 0.999974 , 0.0070704 , -0.0010247 , 0.00101229 )
+end
+
+upper_right_arm
+begin
+	parent	right_shoulder
+	coordinate	( -7.5476 , 14.6222 , 0.00514884 ) ( 0.868828 , -0.487586 , 0.0339565 , -0.0790244 )
+end
+
+lower_right_arm
+begin
+	parent	upper_right_arm
+	coordinate	( -17.8458 , 15.9391 , -0.508398 ) ( 0.997524 , -0.0678742 , 0.0168778 , 0.00735036 )
+end
+
+right_palm
+begin
+	parent	lower_right_arm
+	coordinate	( -26.5014 , 15.9196 , 0.186281 ) ( 0.995493 , 0.0123347 , 0.00839189 , -0.093649 )
+end
+
+upper_left_leg
+begin
+	parent	pelvis
+	coordinate	( 3.52197 , -3.41223 , 0.0400205 ) ( 0.998736 , -0.022573 , 0.0445482 , 0.00568884 )
+end
+
+lower_left_leg
+begin
+	parent	upper_left_leg
+	coordinate	( 3.80383 , -20.8579 , 1.35747 ) ( 0.986645 , 0.0480265 , 0.153549 , 0.0254407 )
+end
+
+left_foot
+begin
+	parent	lower_left_leg
+	coordinate	( 4.12073 , -37.2883 , -0.857782 ) ( 0.987882 , -0.0029496 , 0.153251 , 0.0243895 )
+end
+
+left_toe
+begin
+	parent	left_foot
+	coordinate	( 5.20375 , -38.9807 , 2.333 ) ( 0.987882 , -0.00294952 , 0.153251 , 0.0243894 )
+end
+

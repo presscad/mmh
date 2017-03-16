@@ -1,0 +1,578 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=ks_c_5601-1987">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: BaseLib, Configuration: Release|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\Release\RSP000004.rsp" with contents
+[
+/O2 /I "." /D "WIN32" /D "NDEBUG" /D "_MBCS" /FD /EHsc /MD /GS /YX"stdafx.h" /Fp"Release/BaseLib.pch" /Fo"Release/" /Fd"Release/vc70.pdb" /W3 /c /Zi /TP
+.\stdafx.cpp
+.\utility\util.cpp
+.\utility\TypeString.cpp
+.\utility\TWord.cpp
+.\utility\TTable.cpp
+.\utility\TRefArray.cpp
+.\utility\TOnlineArray.cpp
+.\utility\TNamedMap.cpp
+.\utility\TGL.cpp
+.\utility\tfile.cpp
+.\utility\TextFile.cpp
+.\utility\Parser.cpp
+.\utility\operatorString.cpp
+.\utility\NameTable.cpp
+.\utility\GArray.cpp
+.\utility\FileEx.cpp
+.\utility\configtable.cpp
+.\utility\checkPoints.cpp
+.\motion\VRMLexporter.cpp
+.\motion\viewpoint.cpp
+.\motion\version.cpp
+.\motion\TRCLoader.cpp
+.\motion\TransitionCost.cpp
+.\motion\Stitch.cpp
+.\motion\Retarget.cpp
+.\motion\postureip.cpp
+.\motion\Path2D.cpp
+.\motion\OnlinePath2D.cpp
+.\motion\nodestack.cpp
+.\motion\node.cpp
+.\motion\MotionUtilTwo.cpp
+.\motion\MotionUtilSkeleton.cpp
+.\motion\MotionUtil.cpp
+.\motion\MotionRetarget.cpp
+.\motion\MotionLoader.cpp
+.\motion\MotionAnalysis.cpp
+.\motion\Motion.cpp
+.\motion\ModelLoader.cpp
+.\motion\IKSolver.cpp
+.\motion\FullbodyIK.cpp
+.\motion\FootPrint.cpp
+.\motion\ConstraintMarking.cpp
+.\motion\Concat.cpp
+.\motion\BVHLoader.cpp
+.\motion\ASFLoader.cpp
+.\math\dependency_support\gmm.cpp
+.\math\vector_n.cpp
+.\math\vector3N.cpp
+.\math\vector.cpp
+.\math\tvector.cpp
+.\math\transf.cpp
+.\math\Tetrahedron.cpp
+.\math\SVMWrap.cpp
+.\math\statistics.cpp
+.\math\smatrixN.cpp
+.\math\quaterN.cpp
+.\math\quater.cpp
+.\math\Pca.cpp
+.\math\optimize2.cpp
+.\math\optimize1.cpp
+.\math\OperatorStitch.cpp
+.\math\OperatorSignal.cpp
+.\math\OperatorQuater.cpp
+.\math\Operator.cpp
+.\math\NumericalSpline.cpp
+.\math\nr\nr_all2.cpp
+.\math\nr\nr_all.cpp
+.\math\Metric.cpp
+.\math\matrixnTransposedView.cpp
+.\math\matrix_n.cpp
+.\math\matrix.cpp
+.\math\math_single_precision.cpp
+.\math\LCBInterploator.cpp
+.\math\intervals.cpp
+.\math\intervalN.cpp
+.\math\interval.cpp
+.\math\Interpolation.cpp
+.\math\hyperMatrixN.cpp
+.\math\GnuPlot.cpp
+.\math\FuzzyCluster.cpp
+.\math\Function.cpp
+.\math\Filter.cpp
+.\math\DynamicTimeWarping.cpp
+.\math\DelaunayTriangulation.cpp
+.\math\conversion.cpp
+.\math\complex.cpp
+.\math\cmplxVectorN.cpp
+.\math\cluster.cpp
+.\math\BSpline.cpp
+.\math\bitVectorN.cpp
+.\math\analyticSolver.cpp
+.\image\ImageProcessor.cpp
+.\image\ImagePixelPtr.cpp
+.\image\ImagePixel.cpp
+.\image\ImageFileBmp.cpp
+.\image\Image.cpp
+.\image\DrawChart.cpp
+.\image\ColorConversion.cpp
+]
+Creating command line "cl.exe @d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\Release\RSP000004.rsp /nologo"
+Creating temporary file "d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\Release\RSP000005.rsp" with contents
+[
+/OUT:"D:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\modules\Release/BaseLib.lib" /NOLOGO /NODEFAULTLIB:"libcmt" /NODEFAULTLIB:"LIBC" /NODEFAULTLIB:"libci"
+.\Release\ColorConversion.obj
+.\Release\DrawChart.obj
+.\Release\Image.obj
+.\Release\ImageFileBmp.obj
+.\Release\ImagePixel.obj
+.\Release\ImagePixelPtr.obj
+.\Release\ImageProcessor.obj
+.\Release\analyticSolver.obj
+.\Release\bitVectorN.obj
+.\Release\BSpline.obj
+.\Release\cluster.obj
+.\Release\cmplxVectorN.obj
+.\Release\complex.obj
+.\Release\conversion.obj
+.\Release\DelaunayTriangulation.obj
+.\Release\DynamicTimeWarping.obj
+.\Release\Filter.obj
+.\Release\Function.obj
+.\Release\FuzzyCluster.obj
+.\Release\GnuPlot.obj
+.\Release\hyperMatrixN.obj
+.\Release\Interpolation.obj
+.\Release\interval.obj
+.\Release\intervalN.obj
+.\Release\intervals.obj
+.\Release\LCBInterploator.obj
+.\Release\math_single_precision.obj
+.\Release\matrix.obj
+.\Release\matrix_n.obj
+.\Release\matrixnTransposedView.obj
+.\Release\Metric.obj
+.\Release\nr_all.obj
+.\Release\nr_all2.obj
+.\Release\NumericalSpline.obj
+.\Release\Operator.obj
+.\Release\OperatorQuater.obj
+.\Release\OperatorSignal.obj
+.\Release\OperatorStitch.obj
+.\Release\optimize1.obj
+.\Release\optimize2.obj
+.\Release\Pca.obj
+.\Release\quater.obj
+.\Release\quaterN.obj
+.\Release\smatrixN.obj
+.\Release\statistics.obj
+.\Release\SVMWrap.obj
+.\Release\Tetrahedron.obj
+.\Release\transf.obj
+.\Release\tvector.obj
+.\Release\vector.obj
+.\Release\vector3N.obj
+.\Release\vector_n.obj
+.\Release\gmm.obj
+.\Release\ASFLoader.obj
+.\Release\BVHLoader.obj
+.\Release\Concat.obj
+.\Release\ConstraintMarking.obj
+.\Release\FootPrint.obj
+.\Release\FullbodyIK.obj
+.\Release\IKSolver.obj
+.\Release\ModelLoader.obj
+.\Release\Motion.obj
+.\Release\MotionAnalysis.obj
+.\Release\MotionLoader.obj
+.\Release\MotionRetarget.obj
+.\Release\MotionUtil.obj
+.\Release\MotionUtilSkeleton.obj
+.\Release\MotionUtilTwo.obj
+.\Release\node.obj
+.\Release\nodestack.obj
+.\Release\OnlinePath2D.obj
+.\Release\Path2D.obj
+.\Release\postureip.obj
+.\Release\Retarget.obj
+.\Release\Stitch.obj
+.\Release\TransitionCost.obj
+.\Release\TRCLoader.obj
+.\Release\version.obj
+.\Release\viewpoint.obj
+.\Release\VRMLexporter.obj
+.\Release\checkPoints.obj
+.\Release\configtable.obj
+.\Release\FileEx.obj
+.\Release\GArray.obj
+.\Release\NameTable.obj
+.\Release\operatorString.obj
+.\Release\Parser.obj
+.\Release\TextFile.obj
+.\Release\tfile.obj
+.\Release\TGL.obj
+.\Release\TNamedMap.obj
+.\Release\TOnlineArray.obj
+.\Release\TRefArray.obj
+.\Release\TTable.obj
+.\Release\TWord.obj
+.\Release\TypeString.obj
+.\Release\util.obj
+.\Release\stdafx.obj
+]
+Creating command line "lib.exe @d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\Release\RSP000005.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+stdafx.cpp
+Compiling math_macro.h - this should happen just once per project.
+Compiling math_macro.h - this should happen just once per project.
+Compiling vector.h - this should happen just once per project.
+Compiling vector_n.h - this should happen just once per project.
+Compiling vector3N.h - this should happen just once per project.
+Compiling matrix.h - this should happen just once per project.
+util.cpp
+TypeString.cpp
+TWord.cpp
+TTable.cpp
+TRefArray.cpp
+TOnlineArray.cpp
+TNamedMap.cpp
+TGL.cpp
+tfile.cpp
+utility\tfile.cpp(647) : warning C4390: ';' : empty controlled statement found; is this the intent?
+TextFile.cpp
+Parser.cpp
+operatorString.cpp
+utility\operatorString.cpp(23) : warning C4541: 'typeid' used on polymorphic type 'sz0::Operator' with /GR-; unpredictable behavior may result
+NameTable.cpp
+GArray.cpp
+FileEx.cpp
+configtable.cpp
+utility\configtable.cpp(152) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+checkPoints.cpp
+VRMLexporter.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\VRMLexporter.cpp(42) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        motion\VRMLexporter.cpp(41) : definition of 'i' used
+        motion\VRMLexporter.cpp(25) : definition of 'i' ignored
+motion\VRMLexporter.cpp(42) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        motion\VRMLexporter.cpp(41) : definition of 'i' used
+        motion\VRMLexporter.cpp(25) : definition of 'i' ignored
+motion\VRMLexporter.cpp(42) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        motion\VRMLexporter.cpp(41) : definition of 'i' used
+        motion\VRMLexporter.cpp(25) : definition of 'i' ignored
+motion\VRMLexporter.cpp(44) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        motion\VRMLexporter.cpp(41) : definition of 'i' used
+        motion\VRMLexporter.cpp(25) : definition of 'i' ignored
+motion\VRMLexporter.cpp(47) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        motion\VRMLexporter.cpp(41) : definition of 'i' used
+        motion\VRMLexporter.cpp(25) : definition of 'i' ignored
+motion\VRMLexporter.cpp(51) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        motion\VRMLexporter.cpp(41) : definition of 'i' used
+        motion\VRMLexporter.cpp(25) : definition of 'i' ignored
+motion\VRMLexporter.cpp(57) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        motion\VRMLexporter.cpp(41) : definition of 'i' used
+        motion\VRMLexporter.cpp(25) : definition of 'i' ignored
+viewpoint.cpp
+version.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+TRCLoader.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\TRCLoader.cpp(42) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+motion\TRCLoader.cpp(46) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+motion\TRCLoader.cpp(381) : warning C4244: 'argument' : conversion from 'const m_real' to 'float', possible loss of data
+motion\TRCLoader.cpp(382) : warning C4101: 'aValue' : unreferenced local variable
+motion\TRCLoader.cpp(471) : warning C4101: 'fx' : unreferenced local variable
+motion\TRCLoader.cpp(471) : warning C4101: 'fz' : unreferenced local variable
+motion\TRCLoader.cpp(471) : warning C4101: 'fy' : unreferenced local variable
+TransitionCost.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+Stitch.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Concat.h(14) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Concat' with /GR-; unpredictable behavior may result
+motion\Stitch.cpp(93) : warning C4541: 'dynamic_cast' used on polymorphic type 'Posture' with /GR-; unpredictable behavior may result
+motion\Stitch.cpp(201) : warning C4541: 'dynamic_cast' used on polymorphic type 'Posture' with /GR-; unpredictable behavior may result
+motion\Stitch.cpp(311) : warning C4541: 'dynamic_cast' used on polymorphic type 'Posture' with /GR-; unpredictable behavior may result
+motion\Stitch.cpp(492) : warning C4390: ';' : empty controlled statement found; is this the intent?
+motion\Stitch.cpp(1167) : warning C4244: '+=' : conversion from 'm_real' to 'float', possible loss of data
+Retarget.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\Retarget.cpp(75) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+motion\Retarget.cpp(76) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+postureip.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+Path2D.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\Path2D.cpp(234) : warning C4101: 'retargetDist' : unreferenced local variable
+OnlinePath2D.cpp
+nodestack.cpp
+node.cpp
+MotionUtilTwo.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\MotionUtilTwo.cpp(49) : warning C4101: 'len' : unreferenced local variable
+MotionUtilSkeleton.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\MotionUtilSkeleton.cpp(26) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+motion\MotionUtilSkeleton.cpp(28) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+MotionUtil.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\MotionUtil.cpp(1090) : warning C4305: 'initializing' : truncation from 'double' to 'float'
+motion\MotionUtil.cpp(1170) : warning C4305: 'argument' : truncation from 'double' to 'float'
+motion\MotionUtil.cpp(1198) : warning C4305: 'argument' : truncation from 'double' to 'float'
+MotionRetarget.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\MotionRetarget.cpp(1173) : warning C4541: 'dynamic_cast' used on polymorphic type 'Posture' with /GR-; unpredictable behavior may result
+MotionLoader.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+MotionAnalysis.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\MotionAnalysis.cpp(103) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+motion\MotionAnalysis.cpp(225) : warning C4244: 'initializing' : conversion from 'm_real' to 'int', possible loss of data
+motion\MotionAnalysis.cpp(231) : warning C4244: 'initializing' : conversion from 'm_real' to 'int', possible loss of data
+motion\MotionAnalysis.cpp(287) : warning C4244: 'initializing' : conversion from 'm_real' to 'int', possible loss of data
+motion\MotionAnalysis.cpp(293) : warning C4244: 'initializing' : conversion from 'm_real' to 'int', possible loss of data
+Motion.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Concat.h(14) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Concat' with /GR-; unpredictable behavior may result
+motion\Motion.cpp(111) : warning C4305: 'argument' : truncation from 'double' to 'float'
+motion\Motion.cpp(188) : warning C4541: 'dynamic_cast' used on polymorphic type 'Posture' with /GR-; unpredictable behavior may result
+motion\Motion.cpp(428) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+motion\Motion.cpp(455) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+motion\Motion.cpp(1287) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+ModelLoader.cpp
+IKSolver.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+FullbodyIK.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+FootPrint.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\FootPrint.cpp(313) : warning C4244: 'initializing' : conversion from 'm_real' to 'int', possible loss of data
+motion\FootPrint.cpp(561) : warning C4806: '==' : unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+motion\FootPrint.cpp(561) : warning C4806: '==' : unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+ConstraintMarking.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\ConstraintMarking.cpp(331) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+motion\ConstraintMarking.cpp(331) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+motion\ConstraintMarking.cpp(333) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+motion\ConstraintMarking.cpp(333) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+Concat.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Concat.h(14) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Concat' with /GR-; unpredictable behavior may result
+motion\Concat.cpp(182) : warning C4305: 'argument' : truncation from 'double' to 'float'
+motion\Concat.cpp(183) : warning C4305: 'argument' : truncation from 'double' to 'float'
+BVHLoader.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\BVHLoader.cpp(242) : warning C4244: 'argument' : conversion from 'const m_real' to 'float', possible loss of data
+ASFLoader.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(76) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\motion\Stitch.h(87) : warning C4541: 'typeid' used on polymorphic type 'MotionUtil::Stitch' with /GR-; unpredictable behavior may result
+motion\ASFLoader.cpp(84) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+motion\ASFLoader.cpp(385) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+gmm.cpp
+vector_n.cpp
+vector3N.cpp
+math\vector3N.cpp(142) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\vector3N.cpp(153) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\vector3N.cpp(154) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\vector3N.cpp(200) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+math\vector3N.cpp(216) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+vector.cpp
+tvector.cpp
+d:\research\2009.2_bipedsimulation\code\momentum\pycommon\externallibs\baselib\math\tvector.cpp(12) : warning C4717: 'vector2N::range' : recursive on all control paths, function will cause runtime stack overflow
+transf.cpp
+Tetrahedron.cpp
+SVMWrap.cpp
+d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\math\SVMWrap.h(28) : warning C4244: 'return' : conversion from 'double' to 'int', possible loss of data
+math\SVMWrap.cpp(71) : warning C4101: 'row' : unreferenced local variable
+statistics.cpp
+math\statistics.cpp(119) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        math\statistics.cpp(118) : definition of 'i' used
+        math\statistics.cpp(113) : definition of 'i' ignored
+math\statistics.cpp(119) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        math\statistics.cpp(118) : definition of 'i' used
+        math\statistics.cpp(113) : definition of 'i' ignored
+math\statistics.cpp(119) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        math\statistics.cpp(118) : definition of 'i' used
+        math\statistics.cpp(113) : definition of 'i' ignored
+math\statistics.cpp(120) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        math\statistics.cpp(118) : definition of 'i' used
+        math\statistics.cpp(113) : definition of 'i' ignored
+math\statistics.cpp(125) : warning C4288: nonstandard extension used : 'i' : loop control variable declared in the for-loop is used outside the for-loop scope; it conflicts with the declaration in the outer scope
+        math\statistics.cpp(118) : definition of 'i' used
+        math\statistics.cpp(113) : definition of 'i' ignored
+smatrixN.cpp
+quaterN.cpp
+math\quaterN.cpp(180) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\quaterN.cpp(191) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\quaterN.cpp(192) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\quaterN.cpp(235) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+math\quaterN.cpp(275) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+math\quaterN.cpp(296) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+math\quaterN.cpp(317) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+quater.cpp
+Pca.cpp
+optimize2.cpp
+optimize1.cpp
+OperatorStitch.cpp
+OperatorSignal.cpp
+OperatorQuater.cpp
+Operator.cpp
+math\Operator.cpp(330) : warning C4244: 'initializing' : conversion from 'const m_real' to 'float', possible loss of data
+math\Operator.cpp(1435) : warning C4101: 'diff2' : unreferenced local variable
+math\Operator.cpp(1451) : warning C4101: 'diff2' : unreferenced local variable
+NumericalSpline.cpp
+nr_all2.cpp
+nr_all.cpp
+math\nr\nr_all.cpp(3517) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+math\nr\nr_all.cpp(3518) : warning C4244: '=' : conversion from 'const DP' to 'int', possible loss of data
+math\nr\nr_all.cpp(3532) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\nr\nr_all.cpp(3533) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\nr\nr_all.cpp(7195) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\nr\nr_all.cpp(7195) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+math\nr\nr_all.cpp(7398) : warning C4244: 'argument' : conversion from 'double' to 'std::basic_string<_Elem,_Traits,_Ax>::size_type', possible loss of data
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+math\nr\nr_all.cpp(7653) : warning C4068: unknown pragma
+math\nr\nr_all.cpp(7893) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+math\nr\nr_all.cpp(9720) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+Metric.cpp
+matrixnTransposedView.cpp
+matrix_n.cpp
+matrix.cpp
+math_single_precision.cpp
+LCBInterploator.cpp
+math\LCBInterploator.cpp(74) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+math\LCBInterploator.cpp(117) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+math\LCBInterploator.cpp(135) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+math\LCBInterploator.cpp(135) : warning C4244: '+=' : conversion from 'm_real' to 'float', possible loss of data
+math\LCBInterploator.cpp(137) : warning C4244: '+=' : conversion from 'm_real' to 'float', possible loss of data
+math\LCBInterploator.cpp(138) : warning C4244: '+=' : conversion from 'm_real' to 'float', possible loss of data
+math\LCBInterploator.cpp(158) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+intervals.cpp
+intervalN.cpp
+math\intervalN.cpp(296) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+interval.cpp
+math\interval.cpp(267) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\interval.cpp(268) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+Interpolation.cpp
+math\Interpolation.cpp(194) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+hyperMatrixN.cpp
+GnuPlot.cpp
+FuzzyCluster.cpp
+math\FuzzyCluster.cpp(1242) : warning C4390: ';' : empty controlled statement found; is this the intent?
+Function.cpp
+math\Function.cpp(576) : warning C4101: 'j' : unreferenced local variable
+Filter.cpp
+math\Filter.cpp(79) : warning C4244: 'return' : conversion from 'm_real' to 'float', possible loss of data
+math\Filter.cpp(90) : warning C4244: 'return' : conversion from 'm_real' to 'float', possible loss of data
+math\Filter.cpp(175) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+math\Filter.cpp(175) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+DynamicTimeWarping.cpp
+DelaunayTriangulation.cpp
+conversion.cpp
+complex.cpp
+cmplxVectorN.cpp
+math\cmplxVectorN.cpp(524) : warning C4101: 'index' : unreferenced local variable
+cluster.cpp
+math\cluster.cpp(288) : warning C4390: ';' : empty controlled statement found; is this the intent?
+BSpline.cpp
+bitVectorN.cpp
+math\bitVectorN.cpp(446) : warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+analyticSolver.cpp
+math\analyticSolver.cpp(67) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(67) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(76) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(76) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(87) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(87) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(114) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(114) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(130) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+math\analyticSolver.cpp(130) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+ImageProcessor.cpp
+image\ImageProcessor.cpp(586) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(587) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(588) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(589) : warning C4244: 'initializing' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(594) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(595) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(663) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(663) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(686) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(688) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(729) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(730) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(764) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(764) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(791) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(792) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(798) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(798) : warning C4244: 'argument' : conversion from 'm_real' to 'float', possible loss of data
+image\ImageProcessor.cpp(826) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+image\ImageProcessor.cpp(826) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+image\ImageProcessor.cpp(826) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+image\ImageProcessor.cpp(826) : warning C4244: 'argument' : conversion from 'm_real' to 'int', possible loss of data
+ImagePixelPtr.cpp
+ImagePixel.cpp
+image\ImagePixel.cpp(273) : warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+image\ImagePixel.cpp(274) : warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+image\ImagePixel.cpp(275) : warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+ImageFileBmp.cpp
+image\ImageFileBmp.cpp(80) : warning C4244: '=' : conversion from 'ULONGLONG' to 'DWORD', possible loss of data
+Image.cpp
+image\Image.cpp(130) : warning C4101: 'i' : unreferenced local variable
+image\Image.cpp(135) : warning C4101: 'bWinStyleDIB' : unreferenced local variable
+image\Image.cpp(127) : warning C4101: 'lpPal' : unreferenced local variable
+image\Image.cpp(128) : warning C4101: 'hLogPal' : unreferenced local variable
+DrawChart.cpp
+image\DrawChart.cpp(90) : warning C4244: 'initializing' : conversion from 'm_real' to 'int', possible loss of data
+image\DrawChart.cpp(91) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+image\DrawChart.cpp(114) : warning C4244: 'argument' : conversion from 'm_real' to 'long', possible loss of data
+image\DrawChart.cpp(114) : warning C4244: 'argument' : conversion from 'm_real' to 'long', possible loss of data
+image\DrawChart.cpp(114) : warning C4244: 'argument' : conversion from 'm_real' to 'long', possible loss of data
+image\DrawChart.cpp(114) : warning C4244: 'argument' : conversion from 'm_real' to 'long', possible loss of data
+ColorConversion.cpp
+image\ColorConversion.cpp(50) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+image\ColorConversion.cpp(54) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+image\ColorConversion.cpp(55) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+image\ColorConversion.cpp(56) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+image\ColorConversion.cpp(84) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ColorConversion.cpp(85) : warning C4244: '=' : conversion from 'm_real' to 'float', possible loss of data
+image\ColorConversion.cpp(98) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+image\ColorConversion.cpp(102) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+image\ColorConversion.cpp(104) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+image\ColorConversion.cpp(107) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Creating library...
+nr_all.obj : warning LNK4006: "int kmax" (?kmax@@3HA) already defined in nr_all2.obj; second definition ignored
+nr_all.obj : warning LNK4006: "class vectorn * xp_p" (?xp_p@@3PAVvectorn@@A) already defined in nr_all2.obj; second definition ignored
+nr_all.obj : warning LNK4006: "class matrixn * yp_p" (?yp_p@@3PAVmatrixn@@A) already defined in nr_all2.obj; second definition ignored
+nr_all.obj : warning LNK4006: "double dxsav" (?dxsav@@3NA) already defined in nr_all2.obj; second definition ignored
+nr_all.obj : warning LNK4006: "int kount" (?kount@@3HA) already defined in nr_all2.obj; second definition ignored
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://d:\Research\2009.2_BipedSimulation\Code\Momentum\PyCommon\externalLibs\BaseLib\Release\BuildLog.htm"
+BaseLib - 0 error(s), 215 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

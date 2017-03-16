@@ -1,0 +1,1138 @@
+DEF SampleRobot Humanoid {
+  name "untitled"
+humanoidBody [
+DEF ground_pelvis Joint
+{
+  jointType "free"
+  translation 0.0 0.0 0.0
+  children
+  [
+    Segment
+    {
+      centerOfMass -0.0707 0.0 0.0
+      mass 11.777 momentsOfInertia [0.1028 0.0 0.0 0.0 0.0871 0.0 0.0 0.0 0.0579]
+      children
+      [
+        Transform
+        {
+          rotation 0.0 0.0 0.0 0.0
+          translation 0.0 0.0 0.0
+          scale 1.0 1.0 1.0
+          children
+          [
+            Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/sacrum.obj"}
+          ]
+        }
+        Transform
+        {
+          rotation 0.0 0.0 0.0 0.0
+          translation 0.0 0.0 0.0
+          scale 1.0 1.0 1.0
+          children
+          [
+            Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/pelvis.obj"}
+          ]
+        }
+        Transform
+        {
+          rotation 0.0 0.0 0.0 0.0
+          translation 0.0 0.0 0.0
+          scale 1.0 1.0 1.0
+          children
+          [
+            Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/l_pelvis.obj"}
+          ]
+        }
+      ]
+    }
+    DEF hip_r Joint
+    {
+      jointType "rotate"
+      translation -0.0707 -0.0661 0.0835
+      jointAxis "ZXY"
+      children
+      [
+        Segment
+        {
+          centerOfMass 0.0 -0.17 0.0
+          mass 9.3014 momentsOfInertia [0.1339 0.0 0.0 0.0 0.0351 0.0 0.0 0.0 0.1412]
+          children
+          [
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.0 0.0 0.0
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/femur.obj"}
+              ]
+            }
+          ]
+        }
+        DEF knee_r Joint
+        {
+          jointType "rotate"
+          translation 0.0 -0.396 0.0
+          jointAxis "Z"
+          children
+          [
+            Segment
+            {
+              centerOfMass 0.0 -0.1867 0.0
+              mass 3.7075 momentsOfInertia [0.0504 0.0 0.0 0.0 0.0051 0.0 0.0 0.0 0.0511]
+              children
+              [
+                Transform
+                {
+                  rotation 0.0 0.0 0.0 0.0
+                  translation 0.0 0.0 0.0
+                  scale 1.0 1.0 1.0
+                  children
+                  [
+                    Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/tibia.obj"}
+                  ]
+                }
+                Transform
+                {
+                  rotation 0.0 0.0 0.0 0.0
+                  translation 0.0 0.0 0.0
+                  scale 1.0 1.0 1.0
+                  children
+                  [
+                    Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/fibula.obj"}
+                  ]
+                }
+              ]
+            }
+            DEF ankle_r Joint
+            {
+              jointType "rotate"
+              translation 0.0 -0.43 0.0
+              jointAxis "ZXY"
+              children
+              [
+                Segment
+                {
+                  centerOfMass 0.04743519 -0.01106481 0.00733333
+                  mass 1.35 momentsOfInertia [0.00377816 -0.00255738 0.00048282 -0.00255738 0.00705155 0.0004153 0.00048282 0.0004153 0.00937289]
+                  children
+                  [
+                    Transform
+                    {
+                      rotation 0.0 0.0 0.0 0.0
+                      translation 0.0 0.0 0.0
+                      scale 1.0 1.0 1.0
+                      children
+                      [
+                        Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/talus.obj"}
+                      ]
+                    }
+                    Transform
+                    {
+                      rotation 0.0 0.0 0.0 0.0
+                      translation 0.0 0.0 0.0
+                      scale 1.0 1.0 1.0
+                      children
+                      [
+                        Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/foot_attachedto_talus_r.obj"}
+                      ]
+                    }
+                  ]
+                }
+                DEF mtp_r Joint
+                {
+                  jointType "rotate"
+                  translation 0.13003 -0.04395 0.009
+                  jointAxis "Z"
+                  children
+                  [
+                    Segment
+                    {
+                      centerOfMass 0.0346 0.006 -0.0175
+                      mass 0.2166 momentsOfInertia [0.0001 0.0 0.0 0.0 0.0002 0.0 0.0 0.0 0.0001]
+                      children
+                      [
+                        Transform
+                        {
+                          rotation 0.0 0.0 0.0 0.0
+                          translation 0.0 0.0 0.0
+                          scale 1.0 1.0 1.0
+                          children
+                          [
+                            Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/bofoot.obj"}
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    DEF hip_l Joint
+    {
+      jointType "rotate"
+      translation -0.0707 -0.0661 -0.0835
+      jointAxis "ZXY"
+      children
+      [
+        Segment
+        {
+          centerOfMass 0.0 -0.17 0.0
+          mass 9.3014 momentsOfInertia [0.1339 0.0 0.0 0.0 0.0351 0.0 0.0 0.0 0.1412]
+          children
+          [
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.0 0.0 0.0
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/l_femur.obj"}
+              ]
+            }
+          ]
+        }
+        DEF knee_l Joint
+        {
+          jointType "rotate"
+          translation 0.0 -0.396 0.0
+          jointAxis "Z"
+          children
+          [
+            Segment
+            {
+              centerOfMass 0.0 -0.1867 0.0
+              mass 3.7075 momentsOfInertia [0.0504 0.0 0.0 0.0 0.0051 0.0 0.0 0.0 0.0511]
+              children
+              [
+                Transform
+                {
+                  rotation 0.0 0.0 0.0 0.0
+                  translation 0.0 0.0 0.0
+                  scale 1.0 1.0 1.0
+                  children
+                  [
+                    Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/l_tibia.obj"}
+                  ]
+                }
+                Transform
+                {
+                  rotation 0.0 0.0 0.0 0.0
+                  translation 0.0 0.0 0.0
+                  scale 1.0 1.0 1.0
+                  children
+                  [
+                    Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/l_fibula.obj"}
+                  ]
+                }
+              ]
+            }
+            DEF ankle_l Joint
+            {
+              jointType "rotate"
+              translation 0.0 -0.43 0.0
+              jointAxis "ZXY"
+              children
+              [
+                Segment
+                {
+                  centerOfMass 0.04743519 -0.01106481 -0.00733333
+                  mass 1.35 momentsOfInertia [0.00377816 -0.00255738 -0.00048282 -0.00255738 0.00705155 -0.0004153 -0.00048282 -0.0004153 0.00937289]
+                  children
+                  [
+                    Transform
+                    {
+                      rotation 0.0 0.0 0.0 0.0
+                      translation 0.0 0.0 0.0
+                      scale 1.0 1.0 1.0
+                      children
+                      [
+                        Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/l_talus.obj"}
+                      ]
+                    }
+                    Transform
+                    {
+                      rotation 0.0 0.0 0.0 0.0
+                      translation 0.0 0.0 0.0
+                      scale 1.0 1.0 1.0
+                      children
+                      [
+                        Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/l_foot_attachedto_talus_l.obj"}
+                      ]
+                    }
+                  ]
+                }
+                DEF mtp_l Joint
+                {
+                  jointType "rotate"
+                  translation 0.13003 -0.04395 -0.009
+                  jointAxis "Z"
+                  children
+                  [
+                    Segment
+                    {
+                      centerOfMass 0.0346 0.006 0.0175
+                      mass 0.2166 momentsOfInertia [0.0001 0.0 0.0 0.0 0.0002 0.0 0.0 0.0 0.0001]
+                      children
+                      [
+                        Transform
+                        {
+                          rotation 0.0 0.0 0.0 0.0
+                          translation 0.0 0.0 0.0
+                          scale 1.0 1.0 1.0
+                          children
+                          [
+                            Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/l_bofoot.obj"}
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    DEF back Joint
+    {
+      jointType "rotate"
+      translation -0.1007 0.0815 0.0
+      jointAxis "ZXY"
+      children
+      [
+        Segment
+        {
+          centerOfMass -0.0093 0.6985 0.0
+          mass 26.6266 momentsOfInertia [1.4745 0.0 0.0 0.0 0.7555 0.0 0.0 0.0 1.4314]
+          children
+          [
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.027025 0.38543 0.025465
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/clavicle.obj"}
+              ]
+            }
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.012695 0.4055 0.161
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/scapula.obj"}
+              ]
+            }
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.027025 0.38543 -0.025465
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/clavicle_l.obj"}
+              ]
+            }
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.012695 0.4055 -0.161
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/scapula_l.obj"}
+              ]
+            }
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.0207 0.3785 0.0
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/thorax.obj"}
+              ]
+            }
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.0207 0.3785 0.0
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/hat_skull.obj"}
+              ]
+            }
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.0207 0.3785 0.0
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/hat_jaw.obj"}
+              ]
+            }
+            Transform
+            {
+              rotation 0.0 0.0 0.0 0.0
+              translation 0.0207 0.3785 0.0
+              scale 1.0 1.0 1.0
+              children
+              [
+                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/hat_spine.obj"}
+              ]
+            }
+          ]
+        }
+        DEF shoulder2 Joint
+        {
+          jointType "rotate"
+          translation 0.0031 0.3715 0.17
+          jointAxis "ZXY"
+          children
+          [
+            Segment
+            {
+              centerOfMass 0.0 -0.164502 0.0
+              mass 2.0325 momentsOfInertia [0.011946 0.0 0.0 0.0 0.004121 0.0 0.0 0.0 0.013409]
+              children
+              [
+                Transform
+                {
+                  rotation 0.0 0.0 0.0 0.0
+                  translation 0.0 0.0 0.0
+                  scale 1.0 1.0 1.0
+                  children
+                  [
+                    Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/humerus.obj"}
+                  ]
+                }
+              ]
+            }
+            DEF elbow Joint
+            {
+              jointType "rotate"
+              translation 0.0061 -0.2904 -0.0123
+              jointAxis "Z"
+              children
+              [
+                Segment
+                {
+                  centerOfMass 0.0 -0.120525 0.0
+                  mass 0.6075 momentsOfInertia [0.002962 0.0 0.0 0.0 0.000618 0.0 0.0 0.0 0.003213]
+                  children
+                  [
+                    Transform
+                    {
+                      rotation 0.0 0.0 0.0 0.0
+                      translation 0.0 0.0 0.0
+                      scale 1.0 1.0 1.0
+                      children
+                      [
+                        Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/ulna.obj"}
+                      ]
+                    }
+                  ]
+                }
+                DEF radioulnar Joint
+                {
+                  jointType "fixed"
+                  translation 0.0004 -0.011503 0.019999
+                  children
+                  [
+                    Segment
+                    {
+                      centerOfMass 0.0 -0.120525 0.0
+                      mass 0.6075 momentsOfInertia [0.002962 0.0 0.0 0.0 0.000618 0.0 0.0 0.0 0.003213]
+                      children
+                      [
+                        Transform
+                        {
+                          rotation 0.0 0.0 0.0 0.0
+                          translation 0.0 0.0 0.0
+                          scale 1.0 1.0 1.0
+                          children
+                          [
+                            Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/radius.obj"}
+                          ]
+                        }
+                      ]
+                    }
+                    DEF radius_hand_r Joint
+                    {
+                      jointType "rotate"
+                      translation 0.018 -0.242 0.025
+                      jointAxis "ZXY"
+                      children
+                      [
+                        Segment
+                        {
+                          centerOfMass 0.0 -0.068095 0.0
+                          mass 0.4575 momentsOfInertia [0.000892 0.0 0.0 0.0 0.000547 0.0 0.0 0.0 0.00134]
+                          children
+                          [
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.013388 -0.009886 -0.010593
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/pisiform.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.0 0.0 0.0
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/lunate.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.012345 -0.004464 -0.001254
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/scaphoid.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.010784 -0.007499 -0.001289
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/triquetrum.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.006977 -0.017549 0.001577
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/hamate.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.003992 -0.015054 0.002327
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/capitate.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.013135 -0.019116 -0.000137
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/trapezoid.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.019285 -0.019623 -0.007981
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/trapezium.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.026485 -0.025023 -0.010481
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/1mc.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.018677 -0.052674 0.007359
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2mc.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.004469 -0.054293 0.009704
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3mc.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.008054 -0.055573 0.00584
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4mc.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.017904 -0.049737 -0.001891
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5mc.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.042985 -0.054223 -0.023181
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/thumbprox.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.056985 -0.080123 -0.033281
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/thumbdist.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.022178 -0.080917 0.010979
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2proxph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.029695 -0.12219 0.018305
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2midph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.033028 -0.147078 0.019525
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2distph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.004709 -0.080583 0.011482
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3proxph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.006359 -0.124794 0.017712
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3midph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.007724 -0.153841 0.019666
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3distph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.009884 -0.079262 0.005667
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4proxph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.013412 -0.119517 0.007012
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4midph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.015729 -0.144306 0.007575
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4distph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.019501 -0.071168 -0.003387
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5proxph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.02478 -0.106731 -0.006266
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5midph.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.027651 -0.127408 -0.008509
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5distph.obj"}
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        DEF shoulder2_l Joint
+        {
+          jointType "rotate"
+          translation 0.0031 0.3715 -0.17
+          jointAxis "ZXY"
+          children
+          [
+            Segment
+            {
+              centerOfMass 0.0 -0.164502 0.0
+              mass 2.0325 momentsOfInertia [0.011946 0.0 0.0 0.0 0.004121 0.0 0.0 0.0 0.013409]
+              children
+              [
+                Transform
+                {
+                  rotation 0.0 0.0 0.0 0.0
+                  translation 0.0 0.0 0.0
+                  scale 1.0 1.0 1.0
+                  children
+                  [
+                    Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/humerus_l.obj"}
+                  ]
+                }
+              ]
+            }
+            DEF elbow_l Joint
+            {
+              jointType "rotate"
+              translation 0.0061 -0.2904 0.0123
+              jointAxis "Z"
+              children
+              [
+                Segment
+                {
+                  centerOfMass 0.0 -0.120525 0.0
+                  mass 0.6075 momentsOfInertia [0.002962 0.0 0.0 0.0 0.000618 0.0 0.0 0.0 0.003213]
+                  children
+                  [
+                    Transform
+                    {
+                      rotation 0.0 0.0 0.0 0.0
+                      translation 0.0 0.0 0.0
+                      scale 1.0 1.0 1.0
+                      children
+                      [
+                        Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/ulna_l.obj"}
+                      ]
+                    }
+                  ]
+                }
+                DEF radioulnar_l Joint
+                {
+                  jointType "fixed"
+                  translation 0.0004 -0.011503 -0.019999
+                  children
+                  [
+                    Segment
+                    {
+                      centerOfMass 0.0 -0.120525 0.0
+                      mass 0.6075 momentsOfInertia [0.002962 0.0 0.0 0.0 0.000618 0.0 0.0 0.0 0.003213]
+                      children
+                      [
+                        Transform
+                        {
+                          rotation 0.0 0.0 0.0 0.0
+                          translation 0.0 0.0 0.0
+                          scale 1.0 1.0 1.0
+                          children
+                          [
+                            Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/radius_l.obj"}
+                          ]
+                        }
+                      ]
+                    }
+                    DEF radius_hand_l Joint
+                    {
+                      jointType "rotate"
+                      translation 0.018 -0.242 -0.025
+                      jointAxis "ZXY"
+                      children
+                      [
+                        Segment
+                        {
+                          centerOfMass 0.0 -0.068095 0.0
+                          mass 0.4575 momentsOfInertia [0.000892 0.0 0.0 0.0 0.000547 0.0 0.0 0.0 0.00134]
+                          children
+                          [
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.013388 -0.009886 0.010593
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/pisiform_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.0 0.0 0.0
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/lunate_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.012345 -0.004464 0.001254
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/scaphoid_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.010784 -0.007499 0.001289
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/triquetrum_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.006977 -0.017549 -0.001577
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/hamate_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.003992 -0.015054 -0.002327
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/capitate_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.013135 -0.019116 0.000137
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/trapezoid_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.019285 -0.019623 0.007981
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/trapezium_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.026485 -0.025023 0.010481
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/1mc_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.018677 -0.052674 -0.007359
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2mc_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.004469 -0.054293 -0.009704
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3mc_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.008054 -0.055573 -0.00584
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4mc_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.017904 -0.049737 0.001891
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5mc_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.042985 -0.054223 0.023181
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/thumbprox_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.056985 -0.080123 0.033281
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/thumbdist_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.022178 -0.080917 -0.010979
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2proxph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.029695 -0.12219 -0.018305
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2midph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.033028 -0.147078 -0.019525
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/2distph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.004709 -0.080583 -0.011482
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3proxph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.006359 -0.124794 -0.017712
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3midph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation 0.007724 -0.153841 -0.019666
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/3distph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.009884 -0.079262 -0.005667
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4proxph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.013412 -0.119517 -0.007012
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4midph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.015729 -0.144306 -0.007575
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/4distph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.019501 -0.071168 0.003387
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5proxph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.02478 -0.106731 0.006266
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5midph_l.obj"}
+                              ]
+                            }
+                            Transform
+                            {
+                              rotation 0.0 0.0 0.0 0.0
+                              translation -0.027651 -0.127408 0.008509
+                              scale 1.0 1.0 1.0
+                              children
+                              [
+                                Shape { geometry OBJ "../Resource/motion/opensim/holzbaur_mesh/5distph_l.obj"}
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+]
+}

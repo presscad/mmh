@@ -1,0 +1,43 @@
+#순서는 상관없지만 빠트리거나 대소문자 틀리면 책임 못짐.
+HIPS            root
+LEFTHIP         LeftUpLeg
+LEFTKNEE        LeftLeg
+LEFTANKLE       LeftFoot
+RIGHTHIP        RightUpLeg  
+RIGHTKNEE       RightLeg
+RIGHTANKLE      RightFoot     
+CHEST		Spine
+CHEST2		Spine1
+LEFTCOLLAR	LeftShoulder1
+LEFTSHOULDER    LeftArm
+LEFTELBOW       LeftForeArm
+LEFTWRIST       LeftHand
+RIGHTCOLLAR	RightShoulder
+RIGHTSHOULDER   RightArm
+RIGHTELBOW      RightForeArm
+RIGHTWRIST      RightHand
+NECK            HEad  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

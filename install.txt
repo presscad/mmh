@@ -1,0 +1,14 @@
+1. Environment
+boost_1_35_0_setup.exe (select 'boost python' when prompted for components)
+matplotlib-0.91.4.win32-py2.5.exe
+numpy-1.2.0-win32-superpack-python2.5.exe
+psyco-1.6.win32-py25.exe
+pyFltk-1.1.2.win32-py2.5.exe
+PyODE-1.2.0.win32-py2.5.exe
+PyOpenGL-3.0.0.win32.exe
+python-2.5.2.msi
+scipy-0.6.0.win32-py2.5.exe
+Microsoft Visual Studio .NET 2003 (VC7.1)
+
+2. Add to system path (needed to import .pyd module) - need to logoff or reboot to take effect
+C:\Program Files\boost\boost_1_35_0\lib

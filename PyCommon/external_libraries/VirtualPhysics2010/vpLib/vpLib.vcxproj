@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LieGroup.cpp" />
+    <ClCompile Include="PrimColDet.cpp" />
+    <ClCompile Include="rmatrix3.cpp" />
+    <ClCompile Include="vp1DOFJoint.cpp" />
+    <ClCompile Include="vpBJoint.cpp" />
+    <ClCompile Include="vpBody.cpp" />
+    <ClCompile Include="vpCollisionDetector.cpp" />
+    <ClCompile Include="vpCollisionGraphBuilder.cpp" />
+    <ClCompile Include="vpCollisionResolver.cpp" />
+    <ClCompile Include="vpContactResolver.cpp" />
+    <ClCompile Include="vpDynamics.cpp" />
+    <ClCompile Include="vpGeom.cpp" />
+    <ClCompile Include="vpJoint.cpp" />
+    <ClCompile Include="vpKinematics.cpp" />
+    <ClCompile Include="vpMaterial.cpp" />
+    <ClCompile Include="vpNDOFJoint.cpp" />
+    <ClCompile Include="vpPenetrationRelaxer.cpp" />
+    <ClCompile Include="vpPJoint.cpp" />
+    <ClCompile Include="vpPrimitiveCollisionDetector.cpp" />
+    <ClCompile Include="vpRJoint.cpp" />
+    <ClCompile Include="vpSingleSystem.cpp" />
+    <ClCompile Include="vpSJoint.cpp" />
+    <ClCompile Include="vpSpring.cpp" />
+    <ClCompile Include="vpSystem.cpp" />
+    <ClCompile Include="vpTimer.cpp" />
+    <ClCompile Include="vpUJoint.cpp" />
+    <ClCompile Include="vpWJoint.cpp" />
+    <ClCompile Include="vpWorld.cpp" />
+    <ClCompile Include="wpWorld_IO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\usr\include\VP\LieGroup.h" />
+    <ClInclude Include="..\usr\include\VP\PrimColDet.h" />
+    <ClInclude Include="..\usr\include\VP\rmatrix3.h" />
+    <ClInclude Include="..\usr\include\VP\smatrix.h" />
+    <ClInclude Include="..\usr\include\VP\vp1DOFJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpBJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpBody.h" />
+    <ClInclude Include="..\usr\include\VP\vpCollisionDetector.h" />
+    <ClInclude Include="..\usr\include\VP\vpDataType.h" />
+    <ClInclude Include="..\usr\include\VP\vpGeom.h" />
+    <ClInclude Include="..\usr\include\VP\vphysics.h" />
+    <ClInclude Include="..\usr\include\VP\vpJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpMaterial.h" />
+    <ClInclude Include="..\usr\include\VP\vpNDOFJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpPJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpPrimitiveCollisionDetector.h" />
+    <ClInclude Include="..\usr\include\VP\vpRJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpSingleSystem.h" />
+    <ClInclude Include="..\usr\include\VP\vpSJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpSpring.h" />
+    <ClInclude Include="..\usr\include\VP\vpSystem.h" />
+    <ClInclude Include="..\usr\include\VP\vpTimer.h" />
+    <ClInclude Include="..\usr\include\VP\vpUJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpWJoint.h" />
+    <ClInclude Include="..\usr\include\VP\vpWorld.h" />
+    <ClInclude Include="..\usr\include\VP\_array.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\usr\include\VP\LieGroup.inl" />
+    <None Include="..\usr\include\VP\rmatrix3.inl" />
+    <None Include="..\usr\include\VP\rmatrix3friend.inl" />
+    <None Include="..\usr\include\VP\smatrixfriend.inl" />
+    <None Include="..\usr\include\VP\vp1DOFJoint.inl" />
+    <None Include="..\usr\include\VP\vpBJoint.inl" />
+    <None Include="..\usr\include\VP\vpBody.inl" />
+    <None Include="..\usr\include\VP\vpGeom.inl" />
+    <None Include="..\usr\include\VP\vpJoint.inl" />
+    <None Include="..\usr\include\VP\vpMaterial.inl" />
+    <None Include="..\usr\include\VP\vpNDOFJoint.inl" />
+    <None Include="..\usr\include\VP\vpPJoint.inl" />
+    <None Include="..\usr\include\VP\vpRJoint.inl" />
+    <None Include="..\usr\include\VP\vpSingleSystem.inl" />
+    <None Include="..\usr\include\VP\vpSJoint.inl" />
+    <None Include="..\usr\include\VP\vpSpring.inl" />
+    <None Include="..\usr\include\VP\vpSystem.inl" />
+    <None Include="..\usr\include\VP\vpUJoint.inl" />
+    <None Include="..\usr\include\VP\vpWJoint.inl" />
+    <None Include="..\usr\include\VP\vpWorld.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81706F1F-A6CF-49F8-9A37-F5FDD6A4131B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vpLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)usr\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)usr\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)usr\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)usr\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>tmp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)usr\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)usr\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)usr\include</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)usr\include</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

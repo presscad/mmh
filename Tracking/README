@@ -1,0 +1,20 @@
+dcjo
+
+(human_model_name)/
+	mcfg
+	mscl
+	(human_model_name).bvh
+
+
+ad :
+	fullbody
+	39 DOFs
+	120 muscles
+	
+	from	FullBody2_lee.wrl
+			FullBody2_lee.luamscl
+
+ad2 :
+	fullbody
+	43 DOFs (3dof knee)
+	120 muscles
